@@ -1,6 +1,10 @@
 #include <iostream>
 #include "tasks_rk1.h"
 
+void test_4(){
+    buildTree(5);
+;}
+
 void test_8()
 {
     StudentInfo Test("Some","One","0001");
@@ -22,7 +26,7 @@ void test_8()
 
 int main() {
 
-    test_8();
+    test_4();
 
 
     return 0;

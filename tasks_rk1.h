@@ -7,7 +7,6 @@
 
 
 #include <tuple>
-#include <wsman.h>
 #include <string>
 #include <map>
 #include <list>
@@ -15,6 +14,7 @@
 class tasks_rk1 {
 
 };
+void buildTree(int height);
 
 class StudentInfo{
 private :

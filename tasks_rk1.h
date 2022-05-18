@@ -10,6 +10,7 @@
 #include <wsman.h>
 #include <string>
 #include <map>
+#include <list>
 
 class tasks_rk1 {
 
@@ -18,9 +19,9 @@ class tasks_rk1 {
 class StudentInfo{
 private :
     std::tuple< std::string /*фамилия*/,std::string /*имя*/,char* /*№ студ билета*/> info;
-    std::map<std::string/*название предмета*/, std::pair<int* /*список оценок*/, float /*средняя оценка*/>> subjMark;
+    std::map<std::string/*название предмета*/, std::pair<std::list<int> /*список оценок*/, float /*средняя оценка*/>> subjMark;
 public :
-    StudentInfo();
+    StudentInfo(std::string, std::string,char* );
     int addMark(const std::string& subjName, int mark);
     /*	desription	:	добавления отметки по выбранному предмету
         input		:	subjName - название предмета

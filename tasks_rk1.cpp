@@ -38,7 +38,7 @@ float  StudentInfo::getAverMark(const std::string& subjName){
 
 };
 void StudentInfo::writeAllInfoToFile(){
-
+int a;
 };
 
 StudentInfo::~StudentInfo() {

@@ -27,6 +27,7 @@ void test_8()
 int main() {
 
     test_4();
+    test_8();
 
 
     return 0;
